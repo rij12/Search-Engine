@@ -2,7 +2,13 @@ import csv
 from stop_words import get_stop_words
 import string
 import re
+import nltk
+nltk.download('punkt')
 
+from nltk.stem import PorterStemmer
+from nltk.tokenize import sent_tokenize, word_tokenize
+
+ps = PorterStemmer()
 
 stop_words = get_stop_words('english')
 def parse_csv_file(file):
@@ -30,11 +36,20 @@ def parse_csv_file(file):
             name_string = pattern.sub(' ', row[1])
             brand_string = pattern.sub(' ', row[2])
 
+            # Stem name and brand string
+
+            # name_string = word_tokenize(row[1])
+            # brand_string = word_tokenize(row[2])
+
+            # print(name_string)
+            # print(brand_string)
+
             name_tokens = name_string.split(" ")
             brand_tokens = brand_string.split(" ")
 
             for word in name_tokens:
                 index = word.lower()
+                index = ps.stem(index)
 
                 # Do add stop words
                 if word in stop_words:

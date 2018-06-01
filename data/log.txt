@@ -1,42 +1,33 @@
-Results: 40
-{'10310',
- '10726',
- '14876',
- '22417',
- '22471',
- '22991',
- '23464',
- '25492',
- '25494',
- '32168',
- '32190',
- '32543',
- '32552',
- '32576',
- '32583',
- '32633',
- '32693',
- '3589',
- '47920',
- '47977',
- '48137',
- '48149',
- '48211',
- '48252',
- '48330',
- '48376',
- '48379',
- '5381',
- '58203',
- '58216',
- '5898',
- '59029',
- '59116',
- '5930',
- '63568',
- '68596',
- '68642',
- '8039',
- '8354',
- '8496'}
---- 0.0002205371856689453 seconds ---
+pydev debugger: process 11824 is connecting
+
+[nltk_data] Downloading package punkt to /home/richard/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Traceback (most recent call last):
+  File "_pydevd_bundle/pydevd_cython.pyx", line 749, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch (_pydevd_bundle/pydevd_cython.c:15912)
+  File "_pydevd_bundle/pydevd_cython.pyx", line 254, in _pydevd_bundle.pydevd_cython.PyDBFrame.do_wait_suspend (_pydevd_bundle/pydevd_cython.c:5648)
+  File "/home/richard/Downloads/down/pycharm-2017.3.4/helpers/pydev/pydevd.py", line 817, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/richard/Downloads/down/pycharm-2017.3.4/helpers/pydev/pydevd.py", line 1668, in <module>
+    main()
+  File "/home/richard/Downloads/down/pycharm-2017.3.4/helpers/pydev/pydevd.py", line 1662, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/home/richard/Downloads/down/pycharm-2017.3.4/helpers/pydev/pydevd.py", line 1072, in run
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/home/richard/Downloads/down/pycharm-2017.3.4/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/home/richard/git/EditedInterview/EditedSearchEngine/main.py", line 10, in <module>
+    index = parse_csv_file("/home/richard/git/EditedInterview/data/search_dataset.csv")
+  File "/home/richard/git/EditedInterview/EditedSearchEngine/utils/parser.py", line 55, in parse_csv_file
+    if word in stop_words:
+  File "/home/richard/git/EditedInterview/EditedSearchEngine/utils/parser.py", line 55, in parse_csv_file
+    if word in stop_words:
+  File "_pydevd_bundle/pydevd_cython.pyx", line 968, in _pydevd_bundle.pydevd_cython.SafeCallWrapper.__call__ (_pydevd_bundle/pydevd_cython.c:19675)
+  File "_pydevd_bundle/pydevd_cython.pyx", line 515, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch (_pydevd_bundle/pydevd_cython.c:19009)
+  File "_pydevd_bundle/pydevd_cython.pyx", line 758, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch (_pydevd_bundle/pydevd_cython.c:16066)
+  File "_pydevd_bundle/pydevd_cython.pyx", line 749, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch (_pydevd_bundle/pydevd_cython.c:15912)
+  File "_pydevd_bundle/pydevd_cython.pyx", line 254, in _pydevd_bundle.pydevd_cython.PyDBFrame.do_wait_suspend (_pydevd_bundle/pydevd_cython.c:5648)
+  File "/home/richard/Downloads/down/pycharm-2017.3.4/helpers/pydev/pydevd.py", line 817, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
