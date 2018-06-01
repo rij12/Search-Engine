@@ -49,5 +49,7 @@ class SearchEngine:
 
         return results
 
-    def rank_queries(self):
-        pass
+    def rank_queries(self, results):
+
+
+
