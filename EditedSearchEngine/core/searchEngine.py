@@ -1,5 +1,7 @@
 import re
 
+import pprint
+
 
 class SearchEngine:
 
@@ -12,12 +14,24 @@ class SearchEngine:
         query_string_clean = pattern.sub(' ', query_string)
         query_string_clean = query_string_clean.lower()
 
-        results = dict()
+        results = []
 
-        for word in query_string_clean.split():
-            results[word] = self.single_word_query(word)
+        for index, word in enumerate(query_string_clean.split()):
+            # results[word] = self.single_word_query(word)
+
+            # Only use words that are indexed
+            if word not in self.index:
+                results = []
+                break
+
+            # Calculate the intersection between the results
+            current_index = self.index[word]
+            if index == 0:
+                results = current_index
+            else:
+                results = set(results) & set(current_index)
+
         return results
-
 
     def single_word_query(self, word):
 
