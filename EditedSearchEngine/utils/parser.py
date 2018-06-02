@@ -1,5 +1,4 @@
 import csv
-from stop_words import get_stop_words
 import string
 import re
 import nltk
@@ -10,7 +9,7 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 
 ps = PorterStemmer()
 
-stop_words = get_stop_words('english')
+# stop_words = get_stop_words('english')
 def parse_csv_file(file):
     """
     loads CSV file from file
@@ -52,8 +51,8 @@ def parse_csv_file(file):
                 index = ps.stem(index)
 
                 # Do add stop words
-                if word in stop_words:
-                    break
+                # if word in stop_words:
+                #     break
 
                 if index not in inverted_index:
                     inverted_index[index] = list()
@@ -65,8 +64,8 @@ def parse_csv_file(file):
                 index = brand.lower()
 
                 # Do not add stop words
-                if brand in stop_words:
-                    break
+                # if brand in stop_words:
+                #     break
 
                 if index not in inverted_index:
                     inverted_index[index] = list()
@@ -75,3 +74,23 @@ def parse_csv_file(file):
                     inverted_index.setdefault(index, []).append(row[0])
 
     return inverted_index
+
+
+def get_data(file):
+
+    data = dict()
+
+    with open(file) as csvfile:
+        csv_data = csv.reader(csvfile, delimiter=',')
+        for row in csv_data:
+
+            blob = row[1].lower() + " " + row[2].lower()
+            blob = blob.split()
+
+            data[row[0]] = blob
+
+    # print(data)
+
+    return data
+
+
