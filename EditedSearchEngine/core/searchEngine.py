@@ -20,7 +20,7 @@ class SearchEngine:
         self.index = index
         self.data = data
 
-    def free_text_query(self, query_string):
+    def query(self, query_string):
         """
         Takes a query string and converts to
         :param query_string: String of text containing the query
@@ -35,17 +35,10 @@ class SearchEngine:
 
         # Check if query token are in index
         for index, word in enumerate(query_string_clean.split()):
-            word = ps.stem(word)
-            # Only use words that are indexed
-            # todo fix
-            # if word not in self.index:
-            #     results = []
-            #     break
 
-            # Calculate the intersection between the results
-            # Adds a tuple of results to the current result
+            word = ps.stem(word)
+            # Get prefix of all the tokens e.g. red also matches reddish
             current_index = self.index.items(word)
-            # print(current_index)
 
             # Matching products from the prefix tuples
             matching_products = list()
@@ -53,37 +46,12 @@ class SearchEngine:
                 _, ids = current_index[x]
                 matching_products += ids
 
-            print(len(matching_products))
-            print(matching_products)
-
             if index == 0:
                 results = matching_products
             else:
-                # Only get the product that all the query token appear
+                # Only get the product that all the query tokens appear in
                 results = set(results) & set(matching_products)
-
-        print("Result data:")
-        print(len(results))
-        print(results)
         return results
-
-    def single_word_query(self, word):
-
-        # Clean Query
-
-        pattern = re.compile('[\W_]+')
-        word_clean = pattern.sub(' ', word)
-        word_clean = word_clean.lower()
-        results = list()
-
-        # Is the word indexed?
-        for query in self.index.keys():
-            if word_clean.startswith(query):
-                # print(self.index[word_clean])
-                results.append(self.index[word_clean])
-
-        return results
-
 
 
     def cosine_similarity(self, query, index_text):
@@ -97,15 +65,11 @@ class SearchEngine:
         """
 
         # ensure the input strings are clean
-
         query = clean_string(query)
         index_text = clean_string(index_text)
 
         query_count = self.get_term_frequency(query.lower())
         index_text_count = self.get_term_frequency(index_text)
-
-        print(query_count.keys())
-        print(index_text_count.keys())
 
         # Get unique words from both sequences
 
@@ -138,13 +102,10 @@ class SearchEngine:
         :return: Python dict detailing all words and their frequency.
         """
 
-        # words = query[0] + query[1]
-
         words = query.split()
         term_count = dict()
 
         for word in words:
-
 
             if word not in term_count.keys():
                 term_count[word] = 1
@@ -163,10 +124,7 @@ class SearchEngine:
         depq = DEPQ.DEPQ(iterable=None, maxlen=10)
 
         # Get a dict of matching product indexed by their id
-        results = self.free_text_query(query)
-        print(results)
-
-        # Rank Results
+        results = self.query(query)
 
         ranking = dict()
 

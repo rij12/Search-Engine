@@ -22,8 +22,8 @@ if __name__ == "__main__":
     # print(args.load, args.index)
 
     # Ingest data
-    index = parse_csv_file("../data/search_dataset.csv")
-    data = get_data("../data/search_dataset.csv")
+    index = parse_csv_file("../data/test.csv")
+    data = get_data("../data/test.csv")
     search_engine = SearchEngine(index, data)
     # Seconds
     start_time = time.time()
