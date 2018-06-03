@@ -1,12 +1,10 @@
-10
-0.4472135954999579, 8524, green distressed hibiscus print tankini top richard printed printing reddish, mantaray
-0.4082482904638631, 36888, logo top, pretty green
-0.35355339059327373, 6592, ming green top, st martins
-0.35355339059327373, 908, montreal top moss green, astars
-0.31622776601683794, 26116, green border print bandeau top, evans
-0.31622776601683794, 24408, crew neck sweat top, racing green
-0.31622776601683794, 59984, green printed necklace top, ann harvey
-0.31622776601683794, 22149, green twist hanky hem top, wallis
-0.31622776601683794, 30489, petite green v-neck top, dorothy perkins
-0.2886751345948129, 8995, green multi stripe vest top, dorothy perkins
---- 1.1179447174072266e-06 Milliseconds ---
+Traceback (most recent call last):
+  File "/Users/richardjones/git/EditedInterview/EditedSearchEngine/main.py", line 25, in <module>
+    index = parse_csv_file("../data/search_dataset.csv")
+  File "/Users/richardjones/git/EditedInterview/EditedSearchEngine/utils/parser.py", line 38, in parse_csv_file
+    index = ps.stem(index)
+  File "/usr/local/lib/python3.6/site-packages/nltk/stem/porter.py", line 670, in stem
+    stem = self._step4(stem)
+  File "/usr/local/lib/python3.6/site-packages/nltk/stem/porter.py", line 543, in _step4
+    def _step4(self, word):
+KeyboardInterrupt

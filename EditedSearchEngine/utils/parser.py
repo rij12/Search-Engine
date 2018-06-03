@@ -17,7 +17,7 @@ def parse_csv_file(file):
     and value: all the products that the token appears in.
     :return: Inverted index
     """
-    inverted_index = dict()
+    inverted_index = pygtrie.CharTrie()
 
     with open(file) as csvfile:
         csv_data = csv.reader(csvfile, delimiter=',')
@@ -32,7 +32,6 @@ def parse_csv_file(file):
             name_tokens = name_string.split(" ")
             brand_tokens = brand_string.split(" ")
 
-            #
             for word in name_tokens:
                 index = word.lower()
                 index = ps.stem(index)
@@ -51,7 +50,7 @@ def parse_csv_file(file):
                     inverted_index.setdefault(index, []).append(row[0])
                 else:
                     inverted_index.setdefault(index, []).append(row[0])
-
+    # print(inverted_index)
     return inverted_index
 
 
@@ -67,6 +66,12 @@ def get_data(file):
             data[row[0]] = blob
 
     return data
+
+
+
+def clean_string(string):
+    pattern = re.compile('[\W_]+')
+    return pattern.sub(' ', string)
 
 
 

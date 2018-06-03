@@ -4,6 +4,8 @@ import re
 import depq as DEPQ
 from nltk.stem import PorterStemmer
 
+from EditedSearchEngine.utils.parser import clean_string
+
 ps = PorterStemmer()
 
 """
@@ -30,20 +32,39 @@ class SearchEngine:
         query_string_clean = query_string_clean.lower()
 
         results = list()
+
         # Check if query token are in index
         for index, word in enumerate(query_string_clean.split()):
             word = ps.stem(word)
             # Only use words that are indexed
-            if word not in self.index:
-                results = []
-                break
+            # todo fix
+            # if word not in self.index:
+            #     results = []
+            #     break
 
             # Calculate the intersection between the results
-            current_index = self.index[word]
+            # Adds a tuple of results to the current result
+            current_index = self.index.items(word)
+            # print(current_index)
+
+            # Matching products from the prefix tuples
+            matching_products = list()
+            for x in range(0, len(current_index)):
+                _, ids = current_index[x]
+                matching_products += ids
+
+            print(len(matching_products))
+            print(matching_products)
+
             if index == 0:
-                results = current_index
+                results = matching_products
             else:
-                results = set(results) & set(current_index)
+                # Only get the product that all the query token appear
+                results = set(results) & set(matching_products)
+
+        print("Result data:")
+        print(len(results))
+        print(results)
         return results
 
     def single_word_query(self, word):
@@ -63,11 +84,6 @@ class SearchEngine:
 
         return results
 
-    def rank_results(self, result):
-
-        # Get terms frequency of terms for a given string
-        pass
-
 
 
     def cosine_similarity(self, query, index_text):
@@ -80,12 +96,21 @@ class SearchEngine:
         :return: A ranking score that determines how similar the query and the provided product is.
         """
 
+        # ensure the input strings are clean
+
+        query = clean_string(query)
+        index_text = clean_string(index_text)
+
         query_count = self.get_term_frequency(query.lower())
-        index_text_count = self.get_term_frequency(index_text.lower())
+        index_text_count = self.get_term_frequency(index_text)
+
+        print(query_count.keys())
+        print(index_text_count.keys())
 
         # Get unique words from both sequences
 
-        intersection_set = set(query_count) & set(index_text_count)
+        # intersection_set = set(query_count.keys()) & set(index_text_count.keys())
+        intersection_set = [value for value in query_count.keys() if value in index_text_count.keys()]
 
         dot_product = 0
 
@@ -106,17 +131,20 @@ class SearchEngine:
         # return cosine similarity
         return dot_product / math.sqrt(magnitude_query * magnitude_index_string)
 
-    def get_term_frequency(self, string):
+    def get_term_frequency(self, query):
         """
         Given an array of string return a dict of the terms and their count in each string
         :param string: A string of text
         :return: Python dict detailing all words and their frequency.
         """
 
-        words = string.split()
+        # words = query[0] + query[1]
+
+        words = query.split()
         term_count = dict()
 
         for word in words:
+
 
             if word not in term_count.keys():
                 term_count[word] = 1
@@ -136,6 +164,7 @@ class SearchEngine:
 
         # Get a dict of matching product indexed by their id
         results = self.free_text_query(query)
+        print(results)
 
         # Rank Results
 
@@ -150,6 +179,7 @@ class SearchEngine:
         print(depq.size())
         for product in depq:
 
-            # unpacking score, id.
+            # Unpacking score, id.
             name, brand = self.data[product[0]].split(',')
-            print("{}, {}, {}, {}".format(product[1], product[0], name, brand))
+            print("{}, {}, {}, {}".format(round(product[1], 2), product[0], name, brand))
+
