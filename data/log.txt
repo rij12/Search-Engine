@@ -1,25 +1,12 @@
-[nltk_data] Downloading package punkt to
-[nltk_data]     /Users/richardjones/nltk_data...
-[nltk_data]   Package punkt is already up-to-date!
 10
-0.5, 40504, asos rich indigo flare, asos 
-
-0.5, 23150, triumph rich desire bra, triumph 
-
-0.5, 18299, cotton rich shorts, jonathan aston 
-
-0.4472135954999579, 17678, silk rich floral corsage clip, unknown 
-
-0.4472135954999579, 9977, cotton rich full length joggers, cotton 
-
-0.4472135954999579, 61340, modal rich lace long nightdress, moda 
-
-0.4472135954999579, 4446, lightweight linen rich chambray scarf, unknown 
-
-0.4082482904638631, 36615, flannel scarf, woolrich john rich & bros. 
-
-0.4082482904638631, 25019, cotton rich sleeveless check prom dress, cotton 
-
-0.4082482904638631, 10001, cotton rich full length stretch joggers, cotton 
-
---- 1.02996826171875e-06 Milliseconds ---
+0.7559289460184544, 39716, boss green striped scarf, boss green
+0.7559289460184544, 39716, boss green striped scarf, boss green
+0.7071067811865475, 66924, glory, paul green
+0.7071067811865475, 67287, edana, paul green
+0.7071067811865475, 36471, felisa, paul green
+0.7071067811865475, 64297, hilary, paul green
+0.6666666666666666, 47178, boss green apache mesh trainers, boss green golf
+0.6666666666666666, 47178, boss green apache mesh trainers, boss green golf
+0.6324555320336759, 17945, pretty green by liam gallagher denim jacket, pretty green
+0.6324555320336759, 17945, pretty green by liam gallagher denim jacket, pretty green
+--- 3.0939579010009766e-06 Milliseconds ---
