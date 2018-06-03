@@ -6,6 +6,8 @@ import re
 
 from nltk.stem import PorterStemmer
 
+import pygtrie
+
 
 ps = PorterStemmer()
 
@@ -65,5 +67,10 @@ def get_data(file):
             data[row[0]] = blob
 
     return data
+
+
+
+
+
 
 

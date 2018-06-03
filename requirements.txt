@@ -2,3 +2,4 @@ get_stop_words
 nltk
 pprint
 argparse
+pygtrie
