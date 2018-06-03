@@ -1,6 +1,6 @@
 import math
 import re
-
+import operator
 
 class SearchEngine:
 
@@ -57,6 +57,7 @@ class SearchEngine:
         # Get terms frequency of terms for a given string
         pass
 
+
     # todo add reference to the cosine matching wikie page or something
     def cosine_similarity(self, query, index_text):
         """
@@ -78,8 +79,8 @@ class SearchEngine:
         dot_product = 0
 
         # Get the dot product of the two vectors
-        for query_word, index_word in zip(a, b):
-            dot_product += query_word * index_word
+        for intersection_word in intersection_set:
+            dot_product += a[intersection_word] * b[intersection_word]
 
         # Calculate the magnitude for the query
 
@@ -112,5 +113,26 @@ class SearchEngine:
                 term_count[word] = term_count[word] + 1
 
         # todo remove this print line
-        print(term_count)
+        # print(term_count)
         return term_count
+
+    def search(self, query):
+
+        # Get a dict of matching product indexed by their id
+        results = self.free_text_query(query)
+
+        # Rank Results
+
+        ranking = dict()
+
+        # Find the relevance for each product to the query
+        for product in results:
+           ranking[product] = self.cosine_similarity(query, self.data[product])
+
+        # newA = dict(sorted(results.iteritems(), key=operator.itemgetter(1), reverse=True)[:10])
+        print(ranking)
+
+
+
+
+

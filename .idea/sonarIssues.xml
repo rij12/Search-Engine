@@ -18,6 +18,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/data/log.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>

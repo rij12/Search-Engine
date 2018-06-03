@@ -15,18 +15,13 @@ if __name__ == "__main__":
     search_engine = SearchEngine(index, data)
 
     #
-    # start_time = time.time()
-    # answer = search_engine.free_text_query("green jumper")
-    # print("Results: {}".format(len(answer)))
-    # pprint.pprint(answer)
-    # # print(results_free)
-    # print("--- %s seconds ---" % (time.time() - start_time))
 
-    string_list = "hello my name is richard richard"
+    start_time = time.time()
+    rank = search_engine.search("rich")
+    pprint.pprint(rank)
+    print("Number of products: {}".format(len(rank.keys())))
+    print("--- {} Milliseconds ---".format((time.time() - start_time)/1000))
 
-    search_engine.cosine_similarity("He is the hero Gotham deserves", "but not the one it needs right now.")
-
-    # print(term_count)
 
 
 
