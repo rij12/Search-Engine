@@ -84,8 +84,8 @@ def get_data(file):
         csv_data = csv.reader(csvfile, delimiter=',')
         for row in csv_data:
 
-            blob = row[1].lower() + " " + row[2].lower()
-            # blob = blob.split()
+            blob = row[1].lower() + "," + row[2].lower()
+
 
             data[row[0]] = blob
 

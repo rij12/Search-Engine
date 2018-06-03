@@ -18,8 +18,8 @@ if __name__ == "__main__":
 
     start_time = time.time()
     rank = search_engine.search("rich")
-    pprint.pprint(rank)
-    print("Number of products: {}".format(len(rank.keys())))
+    # pprint.pprint(rank)
+    # print("Number of products: {}".format(len(rank.keys())))
     print("--- {} Milliseconds ---".format((time.time() - start_time)/1000))
 
 

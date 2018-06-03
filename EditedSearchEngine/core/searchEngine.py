@@ -1,6 +1,9 @@
 import math
 import re
 import operator
+import pprint as pprint
+import depq as DEPQ
+
 
 class SearchEngine:
 
@@ -117,6 +120,7 @@ class SearchEngine:
         return term_count
 
     def search(self, query):
+        depq = DEPQ.DEPQ(iterable=None, maxlen=10)
 
         # Get a dict of matching product indexed by their id
         results = self.free_text_query(query)
@@ -125,12 +129,35 @@ class SearchEngine:
 
         ranking = dict()
 
+
         # Find the relevance for each product to the query
         for product in results:
            ranking[product] = self.cosine_similarity(query, self.data[product])
+           # item, priority
+           depq.insert(product, ranking[product])
 
-        # newA = dict(sorted(results.iteritems(), key=operator.itemgetter(1), reverse=True)[:10])
-        print(ranking)
+
+           # print(queue)
+
+        # print("Size: 10, highest scoring product: {}".format(queue.popfirst()))
+        # print(queue)
+        # print(depq.high(), depq.low())
+        # print(depq)
+
+        # print(self.data)
+        print(depq.size())
+        for product in depq:
+
+
+            # unpacking score, id.
+            name, brand = self.data[product[0]].split(',')
+            # pprint.pprint(product[0], product[1], name, " ", brand)
+
+            print("{}, {}, {}, {} \n".format(product[1], product[0], name, brand))
+
+
+
+        # print(ranking)
 
 
 
