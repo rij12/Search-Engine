@@ -10,6 +10,8 @@ Once the data was indexed, I procressed the string into tokens sperated via a sp
 
 The result was a list of id's, for each product queried the data store for name and brand information using it's product's id and converted into a vector A. The vector consisted of a dict containing all the unique words and their frequency. The query search string into a vector B. Now I used the Cosine Similarity rule (https://en.wikipedia.org/wiki/Cosine_similarity) to get score of how similar the query and the product's name and brand fields were. This score was used as ranking score for search.
 
+This took into account the amount of words of the query and the index product string so for example a query of "red bag" would yield, product A with "red bag asos" and product B "super crazy red Burton bag". In this case product A would be ranked higher becuse even though both index terms have "red bag" product A has very few words so it's words hold higher weight and therefore produces a higher score.
+
 I used dict to store the score and the id as it's index, however this wasn't the best choice for because I want the id, score and it needed to be ordered by the score of similarity between the query and the index. So I changed the dict to a DEPQ (Double End Priority Queue) because it was ordered using score from the cosine Similarity. I set the Queue to have a maximun length of 10 so that once the queue was full it would pop the element with the lowest score, to result in a list of the 10 top highest scoring elements.
 
 I then printed each element in the DEPQ starting from the highest priority(score) as per the requirements.
@@ -82,16 +84,23 @@ ralph lauren vest
 0.61, 15244, fair isle knitted sweater vest, polo ralph lauren
 --- 7.26938247680664e-07 Milliseconds ---
 
+
+### Final thoughts
+
+It was Very fun and interesting interview challenge. I actually learned a lot from the challenge, I've never built a search engine before and learned about indexing in particular: Cosine Simularity, inverted index and Trie data structure.
+
 ## How to run
 
 #### Program Arguments:
 **--search** File that contains searches on each new line (DEFAULT: "../data/test_search.txt")
 **--index** A CSV file to be index (DEFAULT: "../data/search_dataset.csv")
 
+* Export root path, see below for an example command:
+
 ```
-export PYTHONPATH=/PATH/EditedInterview
+export PYTHONPATH=/Users/richardjones/git/EditedInterview/
 pip3 install -r requirements.txt --user
-python3 main.py --index search_dataset.csv --search search_dataset.csv
+python3 EditedSearchEngine/main.py --search data/test_search.txt --index data/search_dataset.csv
 ```
 
 
