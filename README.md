@@ -27,24 +27,24 @@ prada perforated runway duffel bag
 guess top
 ralph lauren vest
 
-### Sample Output
+### Sample Output <br />
 
-1
-0.58, 4838, jelly time only watch yellow, toywatch
---- 3.4689903259277345e-07 Milliseconds ---
-10
-0.87, 50657, asos skinny carrot jeans, asos
-0.87, 19579, asos diamante skinny jeans, asos
-0.82, 41460, asos side zip skinny jeans, asos
-0.82, 19584, asos lace up skinny jeans, asos
-0.77, 50698, asos premium tuxedo tab skinny jeans, asos
-0.77, 38097, asos premium washed camo skinny jeans, asos
-0.77, 21883, asos petite rich indigo skinny jeans, asos
-0.77, 40267, asos petite silver grey skinny jeans, asos
-0.77, 41401, asos curve foil armour skinny jeans, asos
-0.58, 17898, asos petite mini diamante skinny jean, asos
---- 1.1932849884033203e-06 Milliseconds ---
-0
+1 <br />
+0.58, 4838, jelly time only watch yellow, toywatch <br />
+--- 3.4689903259277345e-07 Milliseconds --- <br />
+10 <br />
+0.87, 50657, asos skinny carrot jeans, asos <br />
+0.87, 19579, asos diamante skinny jeans, asos <br />
+0.82, 41460, asos side zip skinny jeans, asos <br />
+0.82, 19584, asos lace up skinny jeans, asos <br />
+0.77, 50698, asos premium tuxedo tab skinny jeans, asos <br />
+0.77, 38097, asos premium washed camo skinny jeans, asos <br />
+0.77, 21883, asos petite rich indigo skinny jeans, asos <br />
+0.77, 40267, asos petite silver grey skinny jeans, asos <br />
+0.77, 41401, asos curve foil armour skinny jeans, asos <br />
+0.58, 17898, asos petite mini diamante skinny jean, asos<br />
+--- 1.1932849884033203e-06 Milliseconds --- <br />
+0 <br />
 --- 6.580352783203126e-08 Milliseconds ---
 10
 0.82, 42719, floral dress, boudicca

@@ -133,9 +133,12 @@ class SearchEngine:
             depq.insert(product, ranking[product])
 
         print(depq.size())
+        output_string = list()
         for product in depq:
 
             # Unpacking product data ready for printing
             name, brand = self.data[product[0]].split(',')
-            print("{}, {}, {}, {}".format(round(product[1], 2), product[0], name, brand))
+            output = "{}, {}, {}, {}".format(round(product[1], 2), product[0], name, brand)
+            output_string.append(output)
 
+        return output_string

@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/richardjones/git/EditedInterview/EditedSearchEngine/main.py", line 5, in <module>
-    from EditedSearchEngine.core.searchEngine import SearchEngine
-ModuleNotFoundError: No module named 'EditedSearchEngine'

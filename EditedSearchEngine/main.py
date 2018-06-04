@@ -36,6 +36,10 @@ if __name__ == "__main__":
             # Execute each query
             start_time = time.time()
             rank = search_engine.search(query)
+
+            for line in rank:
+                print(line)
+
             print("--- {} Milliseconds ---".format((time.time() - start_time) / SECONDS_TO_MILLISECONDS))
 
 

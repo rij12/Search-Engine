@@ -20,7 +20,7 @@ def parse_csv_file(file):
 
         for row in csv_data:
 
-            # Strip the string!
+            # Strip the string! = [^a-zA-Z0-9_]
             pattern = re.compile('[\W_]+')
             name_string = pattern.sub(' ', row[1])
             brand_string = pattern.sub(' ', row[2])
@@ -46,7 +46,6 @@ def parse_csv_file(file):
                     inverted_index.setdefault(index, []).append(row[0])
                 else:
                     inverted_index.setdefault(index, []).append(row[0])
-    # print(inverted_index)
     return inverted_index
 
 

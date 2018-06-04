@@ -13,6 +13,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/EditedSearchEngine/tests/test_parser.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/EditedSearchEngine/tests/test_searchEngine.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/EditedSearchEngine/utils/parser.py">
           <value>
             <set />
@@ -38,6 +48,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/data/search_dataset.csv">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/data/strach.txt">
           <value>
             <set />
@@ -54,6 +69,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/requirements.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
           <value>
             <set />
           </value>
