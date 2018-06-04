@@ -1,6 +1,6 @@
 import unittest
 
-from EditedSearchEngine.core.searchEngine import SearchEngine
+from EditedSearchEngine.core.search_engine import SearchEngine
 from EditedSearchEngine.utils.parser import parse_csv_file, get_data
 
 test_data = "data/test.csv"

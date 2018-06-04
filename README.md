@@ -73,44 +73,44 @@ ralph lauren vest
 0.58, 17898, asos petite mini diamante skinny jean, asos<br />
 --- 1.1932849884033203e-06 Milliseconds --- <br />
 0 <br />
---- 6.580352783203126e-08 Milliseconds ---
-10
-0.82, 42719, floral dress, boudicca
-0.71, 34217, floral lace dress, unknown
-0.71, 30186, floral print dress, linea
-0.71, 51983, floral bodycon dress, topshop
-0.71, 20406, floral dress, wal-g
-0.71, 2836, floral fantasy dress, lanebryant
-0.71, 34740, floral spray dress, eastex
-0.71, 55109, floral chiffon dress, lanebryant
-0.71, 46154, floral strapless dress, jarlo
-0.71, 21761, floral lace dress, cc
---- 6.37507438659668e-06 Milliseconds ---
-0
---- 4.2009353637695313e-07 Milliseconds ---
-1
-1.0, 44050, perforated runway duffel bag, prada
---- 6.017684936523438e-07 Milliseconds ---
-10
-0.87, 57744, guess classic top, guess
-0.82, 21843, jody top, guess
-0.82, 61175, ornament top, guess
-0.82, 26237, patricia top, guess
-0.75, 31426, guess sequin animal tunic top, guess
-0.75, 13107, guess logo ribbed vest top, guess
-0.71, 30148, lydia print top, guess
-0.71, 26393, rumer fringe top, guess
-0.71, 18892, solid barb top, guess
-0.71, 8957, marilyn corset top, guess
---- 1.524209976196289e-06 Milliseconds ---
-6
-0.75, 26907, rlx ralph lauren ocean down vest, rlx ralph lauren
-0.75, 26763, rlx ralph lauren ac targa vest, rlx ralph lauren
-0.66, 58504, ralph lauren childrenswear toddler girls' plain vest - sizes 2t-4t, ralph lauren childrenswear
-0.65, 22604, ralph lauren childrenswear toddler boys' fairisle sweater vest - sizes 2t-4t, ralph lauren childrenswear
-0.65, 2042, ralph lauren childrenswear toddler boys' "ascent" down vest - sizes 2t-4t, ralph lauren childrenswear
-0.61, 15244, fair isle knitted sweater vest, polo ralph lauren
---- 7.26938247680664e-07 Milliseconds ---
+--- 6.580352783203126e-08 Milliseconds --- <br />
+10 <br />
+0.82, 42719, floral dress, boudicca <br />
+0.71, 34217, floral lace dress, unknown <br />
+0.71, 30186, floral print dress, linea <br />
+0.71, 51983, floral bodycon dress, topshop <br />
+0.71, 20406, floral dress, wal-g <br />
+0.71, 2836, floral fantasy dress, lanebryant <br />
+0.71, 34740, floral spray dress, eastex <br />
+0.71, 55109, floral chiffon dress, lanebryant <br />
+0.71, 46154, floral strapless dress, jarlo <br />
+0.71, 21761, floral lace dress, cc <br />
+--- 6.37507438659668e-06 Milliseconds --- <br />
+0 <br />
+--- 4.2009353637695313e-07 Milliseconds --- <br />
+1 <br />
+1.0, 44050, perforated runway duffel bag, prada <br />
+--- 6.017684936523438e-07 Milliseconds --- <br />
+10 <br />
+0.87, 57744, guess classic top, guess <br />
+0.82, 21843, jody top, guess <br />
+0.82, 61175, ornament top, guess <br />
+0.82, 26237, patricia top, guess <br />
+0.75, 31426, guess sequin animal tunic top, guess <br />
+0.75, 13107, guess logo ribbed vest top, guess <br />
+0.71, 30148, lydia print top, guess <br />
+0.71, 26393, rumer fringe top, guess <br />
+0.71, 18892, solid barb top, guess <br />
+0.71, 8957, marilyn corset top, guess <br />
+--- 1.524209976196289e-06 Milliseconds --- <br />
+6 <br />
+0.75, 26907, rlx ralph lauren ocean down vest, rlx ralph lauren <br />
+0.75, 26763, rlx ralph lauren ac targa vest, rlx ralph lauren <br />
+0.66, 58504, ralph lauren childrenswear toddler girls' plain vest - sizes 2t-4t, ralph lauren childrenswear <br />
+0.65, 22604, ralph lauren childrenswear toddler boys' fairisle sweater vest - sizes 2t-4t, ralph lauren childrenswear <br />
+0.65, 2042, ralph lauren childrenswear toddler boys' "ascent" down vest - sizes 2t-4t, ralph lauren childrenswear <br />
+0.61, 15244, fair isle knitted sweater vest, polo ralph lauren <br />
+--- 7.26938247680664e-07 Milliseconds --- <br />
 
 
 ### Final thoughts
