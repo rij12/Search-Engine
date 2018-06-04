@@ -8,11 +8,6 @@ from EditedSearchEngine.utils.parser import clean_string
 
 ps = PorterStemmer()
 
-"""
-
-
-"""
-
 
 class SearchEngine:
 
@@ -32,13 +27,20 @@ class SearchEngine:
         query_string_clean = query_string_clean.lower()
 
         results = list()
+        current_index = None
 
         # Check if query token are in index
         for index, word in enumerate(query_string_clean.split()):
 
             word = ps.stem(word)
-            # Get prefix of all the tokens e.g. red also matches reddish
-            current_index = self.index.items(word)
+
+            try:
+                # Get prefix of all the tokens e.g. red also matches reddish
+                current_index = self.index.items(word)
+            except KeyError:
+                results = []
+                return results
+
 
             # Matching products from the prefix tuples
             matching_products = list()

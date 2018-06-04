@@ -1,15 +1,11 @@
 import csv
-import string
 import re
-# import nltk
-# nltk.download('punkt')
-
-from nltk.stem import PorterStemmer
 
 import pygtrie
-
+from nltk.stem import PorterStemmer
 
 ps = PorterStemmer()
+
 
 def parse_csv_file(file):
     """
@@ -66,7 +62,6 @@ def get_data(file):
             data[row[0]] = blob
 
     return data
-
 
 
 def clean_string(string):
