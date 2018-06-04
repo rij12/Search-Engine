@@ -98,7 +98,7 @@ It was Very fun and interesting interview challenge. I actually learned a lot fr
 * Export root path, see below for an example command:
 
 ```
-export PYTHONPATH=/Users/richardjones/git/EditedInterview/
+export PYTHONPATH=$PWD
 pip3 install -r requirements.txt --user
 python3 EditedSearchEngine/main.py --search data/test_search.txt --index data/search_dataset.csv
 ```

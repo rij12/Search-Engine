@@ -53,7 +53,6 @@ class SearchEngine:
                 results = set(results) & set(matching_products)
         return results
 
-
     def cosine_similarity(self, query, index_text):
         """
         Cosine Similarity(https://en.wikipedia.org/wiki/Cosine_similarity)
