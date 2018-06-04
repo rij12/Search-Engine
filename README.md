@@ -1,5 +1,32 @@
 # Edited Interview Search Engine
 
+
+## How to run
+
+#### Program Arguments:
+**--search** File that contains searches on each new line (DEFAULT: "../data/test_search.txt")
+**--index** A CSV file to be index (DEFAULT: "../data/search_dataset.csv")
+
+* Export root path, see below for an example command:
+
+```
+export PYTHONPATH=$PWD
+pip3 install -r requirements.txt --user
+python3 EditedSearchEngine/main.py --search data/test_search.txt --index data/search_dataset.csv
+```
+
+#### Tests
+
+```
+export PYTHONPATH=$PWD
+pip3 install -r requirements.txt --user
+python3 EditedSearchEngine/tests/test_parser.py
+python3 EditedSearchEngine/tests/test_searchEngine.py
+
+```
+
+## Process
+
 Due to the performance requirements I chosse to an inverted index(https://en.wikipedia.org/wiki/Inverted_index) implemented using a Trie (https://en.wikipedia.org/wiki/Trie) to index the CSV input data. The reason I chosse to use a Trie for the implementation of the inverted index over the standard method of dictionary(hash map) because a dictionary only allows exact matches for words. Where as a Trie allows for prefix matches which is what was required by the chaalenge. It also allows for very fast look up.
 
 ### Processing the query string
@@ -89,19 +116,7 @@ ralph lauren vest
 
 It was Very fun and interesting interview challenge. I actually learned a lot from the challenge, I've never built a search engine before and learned about indexing in particular: Cosine Simularity, inverted index and Trie data structure.
 
-## How to run
 
-#### Program Arguments:
-**--search** File that contains searches on each new line (DEFAULT: "../data/test_search.txt")
-**--index** A CSV file to be index (DEFAULT: "../data/search_dataset.csv")
-
-* Export root path, see below for an example command:
-
-```
-export PYTHONPATH=$PWD
-pip3 install -r requirements.txt --user
-python3 EditedSearchEngine/main.py --search data/test_search.txt --index data/search_dataset.csv
-```
 
 
 

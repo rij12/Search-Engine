@@ -3,7 +3,7 @@ import unittest
 from EditedSearchEngine.core.searchEngine import SearchEngine
 from EditedSearchEngine.utils.parser import parse_csv_file, get_data
 
-test_data = "../../data/test.csv"
+test_data = "data/test.csv"
 
 
 class SearchEngineTestCase(unittest.TestCase):
@@ -42,8 +42,6 @@ class SearchEngineTestCase(unittest.TestCase):
         data = self.search_engine.data
 
         data_set_ids = set(data) & set(expected_output)
-
-        self.assertEquals(len(data_set_ids), len(expected_output))
         self.assertEquals(data_set_ids, data.keys())
         self.assertEquals(data_set_ids, expected_output.keys())
 
