@@ -27,7 +27,6 @@ class SearchEngine:
         query_string_clean = query_string_clean.lower()
 
         results = list()
-        current_index = None
 
         # Check if query token are in index
         for index, word in enumerate(query_string_clean.split()):
@@ -40,7 +39,6 @@ class SearchEngine:
             except KeyError:
                 results = []
                 return results
-
 
             # Matching products from the prefix tuples
             matching_products = list()
@@ -75,8 +73,7 @@ class SearchEngine:
 
         # Get unique words from both sequences
 
-        # intersection_set = set(query_count.keys()) & set(index_text_count.keys())
-        intersection_set = [value for value in query_count.keys() if value in index_text_count.keys()]
+        intersection_set = [word for word in query_count.keys() if word in index_text_count.keys()]
 
         dot_product = 0
 
@@ -100,7 +97,7 @@ class SearchEngine:
     def get_term_frequency(self, query):
         """
         Given an array of string return a dict of the terms and their count in each string
-        :param string: A string of text
+        :param query: A string of text
         :return: Python dict detailing all words and their frequency.
         """
 
@@ -139,7 +136,7 @@ class SearchEngine:
         print(depq.size())
         for product in depq:
 
-            # Unpacking score, id.
+            # Unpacking product data ready for printing
             name, brand = self.data[product[0]].split(',')
             print("{}, {}, {}, {}".format(round(product[1], 2), product[0], name, brand))
 

@@ -10,7 +10,7 @@ SECONDS_TO_MILLISECONDS = 1000
 
 if __name__ == "__main__":
 
-    # # Instantiate the parser
+    # Instantiate the parser
     parser = argparse.ArgumentParser(description='Edited Search Engine')
 
     # Json file to be loaded
@@ -27,8 +27,7 @@ if __name__ == "__main__":
     data = get_data(args.index)
     search_engine = SearchEngine(index, data)
 
-    # read and perform search for each csv line
-
+    # Read and perform search for each csv line
     with open(args.search) as f:
         content = f.readlines()
 
