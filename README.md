@@ -7,7 +7,8 @@
 **--search** File that contains searches on each new line (DEFAULT: "../data/test_search.txt")
 **--index** A CSV file to be index (DEFAULT: "../data/search_dataset.csv")
 
-* Export root path, see below for an example command:
+
+#### Execute program
 
 ```
 export PYTHONPATH=$PWD
