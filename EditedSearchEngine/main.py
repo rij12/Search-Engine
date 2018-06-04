@@ -2,7 +2,7 @@ import argparse
 import time
 
 
-from EditedSearchEngine.core.searchEngine import SearchEngine
+from EditedSearchEngine.core.search_engine import SearchEngine
 from EditedSearchEngine.utils.parser import parse_csv_file, get_data
 
 SECONDS_TO_MILLISECONDS = 1000
@@ -41,18 +41,3 @@ if __name__ == "__main__":
                 print(line)
 
             print("--- {} Milliseconds ---".format((time.time() - start_time) / SECONDS_TO_MILLISECONDS))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

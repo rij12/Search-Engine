@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf9bc76b-4018-4e69-bc04-95387bb4c634" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/EditedSearchEngine/tests/test_parser.py" afterPath="$PROJECT_DIR$/EditedSearchEngine/tests/test_parser.py" />
-      <change beforePath="$PROJECT_DIR$/EditedSearchEngine/tests/test_searchEngine.py" afterPath="$PROJECT_DIR$/EditedSearchEngine/tests/test_searchEngine.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/EditedSearchEngine/core/searchEngine.py" afterPath="$PROJECT_DIR$/EditedSearchEngine/core/search_engine.py" />
+      <change beforePath="$PROJECT_DIR$/EditedSearchEngine/main.py" afterPath="$PROJECT_DIR$/EditedSearchEngine/main.py" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +19,7 @@
     <SUITE FILE_PATH="coverage/EditedInterview$py_test_in_test_searchEngine_py.coverage" NAME="py.test in test_searchEngine.py Coverage Results" MODIFIED="1528128501669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EditedSearchEngine/tests" />
     <SUITE FILE_PATH="coverage/EditedInterview$py_test_for_test_parser_SearchEngineTestCase_test_get_data.coverage" NAME="py.test for test_parser.SearchEngineTestCase.test_get_data Coverage Results" MODIFIED="1528128835580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EditedSearchEngine/tests" />
     <SUITE FILE_PATH="coverage/EditedInterview$py_test_for_test_parser_SearchEngineTestCase_test_parse_csv_file.coverage" NAME="py.test for test_parser.SearchEngineTestCase.test_parse_csv_file Coverage Results" MODIFIED="1528129101501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EditedSearchEngine/tests" />
-    <SUITE FILE_PATH="coverage/EditedInterview$main.coverage" NAME="main Coverage Results" MODIFIED="1528129255793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EditedSearchEngine" />
+    <SUITE FILE_PATH="coverage/EditedInterview$main.coverage" NAME="main Coverage Results" MODIFIED="1528130123342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EditedSearchEngine" />
     <SUITE FILE_PATH="coverage/EditedInterview$py_test_in_tests.coverage" NAME="py.test in tests Coverage Results" MODIFIED="1528129362150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EditedSearchEngine/tests" />
   </component>
   <component name="FileEditorManager">
@@ -27,8 +27,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EditedSearchEngine/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+            <state relative-caret-position="255">
+              <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -76,8 +76,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchEngine.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EditedSearchEngine/core/searchEngine.py">
+      <file leaf-file-name="search_engine.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EditedSearchEngine/core/search_engine.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="439">
               <caret line="135" column="30" lean-forward="false" selection-start-line="135" selection-start-column="30" selection-end-line="135" selection-end-column="30" />
@@ -115,8 +115,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+            <state relative-caret-position="153">
+              <caret line="9" column="33" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -157,7 +157,11 @@
       <find>9064f6415</find>
       <find>11280</find>
       <find>32651</find>
+      <find>the best choice for because I want</find>
     </findStrings>
+    <replaceStrings>
+      <replace>its</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -171,12 +175,12 @@
         <option value="$PROJECT_DIR$/tests/searchEngine_test.py" />
         <option value="$PROJECT_DIR$/EditedSearchEngine/utils/parser.py" />
         <option value="$PROJECT_DIR$/data/test_search.txt" />
-        <option value="$PROJECT_DIR$/EditedSearchEngine/main.py" />
         <option value="$PROJECT_DIR$/EditedSearchEngine/core/searchEngine.py" />
         <option value="$PROJECT_DIR$/data/test.csv" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/EditedSearchEngine/tests/test_searchEngine.py" />
         <option value="$PROJECT_DIR$/EditedSearchEngine/tests/test_parser.py" />
+        <option value="$PROJECT_DIR$/EditedSearchEngine/main.py" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -234,6 +238,12 @@
               <item name="EditedInterview" type="b2602c69:ProjectViewProjectNode" />
               <item name="EditedInterview" type="462c0819:PsiDirectoryNode" />
               <item name="EditedSearchEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EditedInterview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EditedInterview" type="462c0819:PsiDirectoryNode" />
+              <item name="EditedSearchEngine" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -272,7 +282,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in tests">
+  <component name="RunManager" selected="Python.main">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -384,8 +394,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in tests" />
-        <item index="1" class="java.lang.String" itemvalue="Python.main" />
+        <item index="0" class="java.lang.String" itemvalue="Python.main" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in tests" />
         <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_parser.SearchEngineTestCase.test_parse_csv_file" />
         <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_parser.py" />
         <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_parser.SearchEngineTestCase.test_get_data" />
@@ -448,8 +458,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45826086" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34869567" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45826086" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34869567" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1203125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -483,7 +493,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/EditedSearchEngine/core/searchEngine.py</url>
+          <url>file://$PROJECT_DIR$/EditedSearchEngine/core/search_engine.py</url>
           <line>76</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
@@ -572,17 +582,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EditedSearchEngine/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EditedSearchEngine/core/searchEngine.py">
+    <entry file="file://$PROJECT_DIR$/EditedSearchEngine/core/search_engine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="135" column="30" lean-forward="false" selection-start-line="135" selection-start-column="30" selection-end-line="135" selection-end-column="30" />
@@ -670,10 +670,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/EditedSearchEngine/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+        <state relative-caret-position="153">
+          <caret line="9" column="33" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding />
         </state>
       </provider>
