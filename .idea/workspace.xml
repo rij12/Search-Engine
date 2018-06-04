@@ -10,12 +10,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/EditedInterview$py_test_in__pytest_cache.coverage" NAME="py.test in .pytest_cache Coverage Results" MODIFIED="1528133775786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EditedSearchEngine/tests/.pytest_cache" />
     <SUITE FILE_PATH="coverage/EditedInterview$py_test_in_test_parser_py.coverage" NAME="py.test in test_parser.py Coverage Results" MODIFIED="1528128846801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EditedSearchEngine/tests" />
     <SUITE FILE_PATH="coverage/EditedInterview$py_test_in_test_searchEngine_py.coverage" NAME="py.test in test_searchEngine.py Coverage Results" MODIFIED="1528128501669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EditedSearchEngine/tests" />
     <SUITE FILE_PATH="coverage/EditedInterview$py_test_for_test_parser_SearchEngineTestCase_test_get_data.coverage" NAME="py.test for test_parser.SearchEngineTestCase.test_get_data Coverage Results" MODIFIED="1528128835580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EditedSearchEngine/tests" />
     <SUITE FILE_PATH="coverage/EditedInterview$py_test_for_test_parser_SearchEngineTestCase_test_parse_csv_file.coverage" NAME="py.test for test_parser.SearchEngineTestCase.test_parse_csv_file Coverage Results" MODIFIED="1528129101501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EditedSearchEngine/tests" />
     <SUITE FILE_PATH="coverage/EditedInterview$main.coverage" NAME="main Coverage Results" MODIFIED="1528133332380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EditedSearchEngine" />
-    <SUITE FILE_PATH="coverage/EditedInterview$py_test_in_tests.coverage" NAME="py.test in tests Coverage Results" MODIFIED="1528133627415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EditedSearchEngine/tests" />
+    <SUITE FILE_PATH="coverage/EditedInterview$py_test_in_tests.coverage" NAME="py.test in tests Coverage Results" MODIFIED="1528133982320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EditedSearchEngine/tests" />
   </component>
   <component name="FileEditorManager">
     <leaf>
@@ -61,24 +62,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/test.csv">
+      <file leaf-file-name="test_searchEngine.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EditedSearchEngine/tests/test_searchEngine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="85">
+              <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_searchEngine.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EditedSearchEngine/tests/test_searchEngine.py">
+      <file leaf-file-name="diff_tools.py" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/diff_tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="199">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,8 +99,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="104" column="23" lean-forward="false" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
+            <state relative-caret-position="391">
+              <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -315,22 +316,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="py.test for test_parser.SearchEngineTestCase.test_get_data" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EditedSearchEngine/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="EditedInterview" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_parser.SearchEngineTestCase.test_get_data&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
     <configuration name="py.test for test_parser.SearchEngineTestCase.test_parse_csv_file" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -346,6 +331,22 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_parser.SearchEngineTestCase.test_parse_csv_file&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="py.test in .pytest_cache" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EditedSearchEngine/tests/.pytest_cache" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="EditedInterview" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/EditedSearchEngine/tests/.pytest_cache&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration name="py.test in test_parser.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -380,19 +381,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test_parser.SearchEngineTestCase.test_get_data" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_parser.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_parser.SearchEngineTestCase.test_parse_csv_file" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in tests" />
-      <item index="4" class="java.lang.String" itemvalue="Python.main" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_parser.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for test_parser.SearchEngineTestCase.test_parse_csv_file" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in tests" />
+      <item index="3" class="java.lang.String" itemvalue="Python.main" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in .pytest_cache" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in tests" />
-        <item index="1" class="java.lang.String" itemvalue="Python.main" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_parser.SearchEngineTestCase.test_parse_csv_file" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_parser.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_parser.SearchEngineTestCase.test_get_data" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in .pytest_cache" />
+        <item index="2" class="java.lang.String" itemvalue="Python.main" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for test_parser.SearchEngineTestCase.test_parse_csv_file" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_parser.py" />
       </list>
     </recent_temporary>
   </component>
@@ -413,47 +414,46 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_test_parser_SearchEngineTestCase_test_parse_csv_file - 2018.06.04 at 17h 17m 59s.xml">
-      <configuration name="py.test for test_parser.SearchEngineTestCase.test_parse_csv_file" configurationId="tests" />
+    <history-entry file="py_test_in__pytest_cache - 2018.06.04 at 18h 36m 16s.xml">
+      <configuration name="py.test in .pytest_cache" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_parser_SearchEngineTestCase_test_parse_csv_file - 2018.06.04 at 17h 18m 22s.xml">
-      <configuration name="py.test for test_parser.SearchEngineTestCase.test_parse_csv_file" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_tests - 2018.06.04 at 17h 18m 37s.xml">
+    <history-entry file="py_test_in_tests - 2018.06.04 at 18h 35m 38s.xml">
       <configuration name="py.test in tests" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_tests - 2018.06.04 at 17h 19m 03s.xml">
+    <history-entry file="py_test_in_tests - 2018.06.04 at 18h 36m 23s.xml">
       <configuration name="py.test in tests" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_tests - 2018.06.04 at 17h 19m 21s.xml">
+    <history-entry file="py_test_in_tests - 2018.06.04 at 18h 36m 33s.xml">
       <configuration name="py.test in tests" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_tests - 2018.06.04 at 17h 19m 42s.xml">
+    <history-entry file="py_test_in_tests - 2018.06.04 at 18h 37m 16s.xml">
       <configuration name="py.test in tests" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_tests - 2018.06.04 at 17h 20m 03s.xml">
+    <history-entry file="py_test_in_tests - 2018.06.04 at 18h 37m 37s.xml">
       <configuration name="py.test in tests" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_tests - 2018.06.04 at 17h 20m 46s.xml">
+    <history-entry file="py_test_in_tests - 2018.06.04 at 18h 38m 15s.xml">
       <configuration name="py.test in tests" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_tests - 2018.06.04 at 17h 22m 43s.xml">
+    <history-entry file="py_test_in_tests - 2018.06.04 at 18h 39m 15s.xml">
       <configuration name="py.test in tests" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_tests - 2018.06.04 at 18h 33m 48s.xml">
+    <history-entry file="py_test_in_tests - 2018.06.04 at 18h 39m 31s.xml">
+      <configuration name="py.test in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_tests - 2018.06.04 at 18h 39m 43s.xml">
       <configuration name="py.test in tests" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45826086" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34869567" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34869567" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1203125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -652,10 +652,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/diff_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/EditedSearchEngine/tests/test_searchEngine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -674,8 +682,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="104" column="23" lean-forward="false" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
+        <state relative-caret-position="391">
+          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="47" />
           <folding />
         </state>
       </provider>

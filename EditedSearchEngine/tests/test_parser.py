@@ -3,7 +3,7 @@ import unittest
 from EditedSearchEngine.core.search_engine import SearchEngine
 from EditedSearchEngine.utils.parser import parse_csv_file, get_data
 
-test_data = "../../data/test.csv"
+test_data = "data/test.csv"
 
 
 class SearchEngineTestCase(unittest.TestCase):
