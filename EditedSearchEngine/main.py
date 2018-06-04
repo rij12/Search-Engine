@@ -34,10 +34,10 @@ if __name__ == "__main__":
         for query in content:
             query = query.lower().strip()
             # Execute each query
-            start_time = time.time()
+            # start_time = time.time()
             rank = search_engine.search(query)
 
             for line in rank:
                 print(line)
 
-            print("--- {} Milliseconds ---".format((time.time() - start_time) / SECONDS_TO_MILLISECONDS))
+            # print("--- {} Milliseconds ---".format((time.time() - start_time) / SECONDS_TO_MILLISECONDS))
