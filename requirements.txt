@@ -1,4 +1,4 @@
-get_stop_words
+stop-words
 nltk
 pprint
 argparse
