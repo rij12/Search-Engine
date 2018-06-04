@@ -68,6 +68,15 @@ def get_data(file):
     return data
 
 
+def clean_string(string):
+    """
+    Removes special character from a given string
+    :param string: string to be sanitised
+    :return: sanitised string
+    """
+    pattern = re.compile('[\W_]+')
+    return pattern.sub(' ', string)
+
 
 
 
