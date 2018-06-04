@@ -34,8 +34,10 @@ class SearchEngineTestCase(unittest.TestCase):
         self.init()
 
         results = self.search_engine.search(query_string)
+        length = set(expected_output) & set(results)
 
-        self.assertEqual(expected_output, results)
+        self.assertEqual(len(length), len(results))
+        self.assertEqual(len(length), len(expected_output))
 
 
 if __name__ == '__main__':
