@@ -50,6 +50,11 @@ def parse_csv_file(file):
 
 
 def get_data(file):
+    """
+    Dict containing the data from CSV file used for look up when printing the data
+    :param file: csv file containing the data
+    :return: dict containing the CSV data
+    """
 
     data = dict()
 
@@ -62,10 +67,6 @@ def get_data(file):
 
     return data
 
-
-def clean_string(string):
-    pattern = re.compile('[\W_]+')
-    return pattern.sub(' ', string)
 
 
 
