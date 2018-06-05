@@ -3,9 +3,9 @@
 
 ## How to run
 
-#### Program Arguments:
-**--search** File that contains searches on each new line (DEFAULT: "../data/test_search.txt")
-**--index** A CSV file to be index (DEFAULT: "../data/search_dataset.csv")
+#### Program Arguments: <br />
+**--search** File that contains searches on each new line (DEFAULT: "../data/test_search.txt") <br />
+**--index** A CSV file to be index (DEFAULT: "../data/search_dataset.csv") <br />
 
 
 #### Execute program
