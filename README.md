@@ -1,4 +1,4 @@
-# Edited Interview Search Engine
+# Search Engine
 
 
 ## How to run
@@ -46,14 +46,14 @@ I then printed each element in the DEPQ starting from the highest priority(score
 
 ### Sample Input
 
-yellow toywatch
-asos skinny jeans
-toyota car
-floral dress
-red prada clutch
-prada perforated runway duffel bag
-guess top
-ralph lauren vest
+yellow toywatch <br />
+asos skinny jeans <br />
+toyota car <br />
+floral dress <br />
+red prada clutch <br />
+prada perforated runway duffel bag <br />
+guess top <br />
+ralph lauren vest <br />
 
 ### Sample Output <br />
 
@@ -111,8 +111,3 @@ ralph lauren vest
 0.65, 2042, ralph lauren childrenswear toddler boys' "ascent" down vest - sizes 2t-4t, ralph lauren childrenswear <br />
 0.61, 15244, fair isle knitted sweater vest, polo ralph lauren <br />
 --- 7.26938247680664e-07 Milliseconds --- <br />
-
-
-### Final thoughts
-
-It was Very fun and interesting interview challenge. I actually learned a lot from the challenge, I've never built a search engine before and learned about indexing in particular: Cosine Simularity, inverted index and Trie data structure.
