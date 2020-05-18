@@ -1,5 +1,5 @@
 # Search Engine
-
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rij12_Search-Engine&metric=alert_status)](https://sonarcloud.io/dashboard?id=rij12_Search-Engine)
 
 ## How to run
 
